@@ -1,0 +1,11 @@
+--- # Deploy devops node
+- hosts: grafana
+  remote_user: root
+#  become: yes
+#  become_method: sudo
+  connection: ssh
+  gather_facts: yes
+  roles:
+    - ../../Ansible-Roles/ansible-grafana/
+    
+
